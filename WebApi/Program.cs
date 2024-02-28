@@ -13,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IBrandService, BrandManager>();
 builder.Services.AddSingleton<IBrandDal, BrandDal>();
+builder.Services.AddSingleton<IClientService, ClientManager>();
+builder.Services.AddSingleton<IClientDal, ClientDal>();
 
 
 var app = builder.Build();
